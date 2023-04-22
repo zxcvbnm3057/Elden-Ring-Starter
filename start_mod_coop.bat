@@ -12,6 +12,10 @@ del "%PATH_ELDEN_RING%steam_api64.dll "
 
 cd /d ./data/mod
 
+if exist ".\steam_api64.dll" (
+    del "%PATH_ELDEN_RING%steam_api64.dll"
+)
+
 for %%i in (*) do ( 
     mklink /H "%PATH_ELDEN_RING%%%i" %%i 
 )

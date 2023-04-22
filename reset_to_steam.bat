@@ -12,10 +12,10 @@ for %%i in (./data/mod/*) do (
 )
 
 for /d %%i in (./data/mod/*) do ( 
-    rmdir "%PATH_ELDEN_RING%%%i" 
+    rmdir /s /q "%PATH_ELDEN_RING%%%i" 
 )
 
-rmdir "%PATH_ELDEN_RING%mods"
+rmdir /s /q "%PATH_ELDEN_RING%mods"
 
 cd /d ./data/steam
 copy steam_api64.dll "%PATH_ELDEN_RING%"
