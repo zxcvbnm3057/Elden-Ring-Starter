@@ -1,3 +1,5 @@
+@echo off
+
 cd /d %~dp0
 
 call reset_to_steam.bat
@@ -18,5 +20,10 @@ for /d %%i in (*) do (
     mklink /J "%PATH_ELDEN_RING%%%i" %%i
 )
 
-cd /d %PATH_ELDEN_RING%
-start eldenring.exe
+mkdir %PATH_ELDEN_RING%mods
+
+mklink /H "%PATH_ELDEN_RING%mods\elden_ring_seamless_coop.dll" ".\SeamlessCoop\elden_ring_seamless_coop.dll"
+mklink /H "%PATH_ELDEN_RING%mods\seamlesscoopsettings.ini" ".\SeamlessCoop\seamlesscoopsettings.ini"
+
+start "" "%PATH_ELDEN_RING%modengine2_launcher.exe"
+

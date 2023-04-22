@@ -3,12 +3,13 @@
 ## 介绍
 
 
-|        程序        |                                                        功能                                                        |
-| :------------------: | :------------------------------------------------------------------------------------------------------------------: |
-| reset_to_steam.bat |                                         清除所有mod相关文件，恢复正版状态                                         |
-| start_dll_mod.bat | 如果你安装了dll类mod与modloader，将仅启动dll类mod。否则相当于start_steam.bat，但将使用`./data/mod/steam_api64.dll` |
-|  start_steam.bat  |                                            以steam方式启动，与正版一致                                            |
-|   start_mod.bat   |                                    启动游戏并加载全部mod，包括普通mod及dll类mod                                    |
+|          程序          |                               功能                               |
+| :----------------------: | :----------------------------------------------------------------: |
+|   reset_to_steam.bat   |                清除所有mod相关文件，恢复正版状态                |
+|     start_mod.bat     | 启动游戏并加载全部mod，包括普通mod及dll类mod，但不会启动无缝联机 |
+|    start_steam.bat    |                   以steam方式启动，与正版一致                   |
+|   start_mod_coop.bat   |    启动游戏并加载全部mod，包括普通mod及dll类mod，以及无缝联机    |
+| start_vanilla_coop.bat |                启动无缝联机，但不加载其他任何mod                |
 
 ## 安装
 

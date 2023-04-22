@@ -1,3 +1,5 @@
+@echo off
+
 cd /d %~dp0
 
 call reset_to_steam.bat
